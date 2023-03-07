@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 $this->title = 'Update Softswitch: ' . $model->Name;
 $this->params['breadcrumbs'][] = ['label' => 'Softswitches', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->Name, 'url' => ['view', 'ID' => $model->ID]];
+$this->params['breadcrumbs'][] = ['label' => $model->Name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="softswitch-update">
