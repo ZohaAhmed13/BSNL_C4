@@ -32,13 +32,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'ID',
             'Name',
             'SoftSwitch',
-            ['class' => 'yii\grid\ActionColumn',
-            'header'=>'Action',
-            'template' => '{view} {update}',],
-            [
-                'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Mediagateway $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'ID' => $model->ID]);
+          [
+            'class' => ActionColumn::className(),
+            'header'=>'Action', 
+            'template' => '{view}',
+             'urlCreator' => function ($action, Mediagateway $model, $key, $index, $column) {
+                    return Url::toRoute([$action, 'id' => $model->id]);
                  }
             ],
         ],
